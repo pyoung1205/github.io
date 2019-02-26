@@ -1,76 +1,39 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-img {
-  width: 100%;
-  height: auto;
-}
-</style>
-</head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-<body>
-<div class="w3-border">
-<div class="w3-bar w3-theme">
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">London</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Paris')">Paris</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Tokyo')">Tokyo</button>
-</div>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML: Images</title>
+    </head>
+    <body>
 
-<div id="London" class="w3-container city w3-animate-opacity">
-  <h2>London</h2>
-  <p>London is the capital city of England.</p>
-  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <img src="https://www.w3schools.com/images/w3schools_green.jpg" width="460" height="345">
-<p>Resize the browser window to see how the image will scale.</p>
-</div>
+    <h1>All about rabbits!</h1>
+    
+    <h3>Why rabbits make great pets</h3>
+    
+    <ul>
+        <li>They're furry!</li>
+        <li>Great listeners!</li>
+        <li>Eat all your leftover carrots!</li>
+    </ul>
+    
+    <h3>Top 3 most famous rabbits</h3>
+    
+    <ol>
+        <li>Bugs bunny</li>
+        <li>Easter Bunny</li>
+        <li>Thumper</li>
+    </ol>
+    
+    <h2>Basic info</h2>
+    
+    <p>Rabbits are little creatures with long ears and puffy tails, and they move their nose up and down in an adorable way. They eat the most orange vegetables in <em>our</em> world, and <strong>they reproduce more than any human <em>ever</em> has</strong>.</p>
+    
+    <h2>Songs</h2>
+    
+    <p>Little Bunny Foo Foo, <br>
+I don't want to see you <br>
+scooping up the field mice <br>
+and bopping them on the head!</p>
 
-<div id="Paris" class="w3-container city w3-animate-opacity">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p> 
-  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-</div>
-
-<div id="Tokyo" class="w3-container city w3-animate-opacity">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-  <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
-</div>
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-container w3-theme-dark w3-padding-16">
-  <h3>Email: juliacy@gmail.com </h3>
-  <p><a href="https://adhocteam.us" class="w3-btn w3-theme-light" target="_blank">Ad Hoc</a></p>
-</footer>
-
-<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-<script>
-// Tabs
-function openCity(evt, cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("testbtn");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
-}
-
-var mybtn = document.getElementsByClassName("testbtn")[0];
-mybtn.click();
-</script>
-
-</body>
+    </body>
 </html>
